@@ -1,0 +1,18 @@
+{
+    "name": "telegram-tiktok-bot",
+    "version": "1.0.0",
+    "description": "Um bot Telegram que remove marcas d'água de URLs do TikTok.",
+    "main": "main.js",
+    "scripts": {
+      "start": "node main.js"
+    },
+    "keywords": ["telegram", "tiktok", "bot"],
+    "author": "Pedro Souza",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^0.24.0",
+      "dotenv": "^10.0.0",
+      "node-telegram-bot-api": "^0.51.0"
+    }
+  }
+  
