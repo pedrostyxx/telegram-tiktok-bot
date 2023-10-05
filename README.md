@@ -80,5 +80,3 @@ Para que outro desenvolvedor utilize este bot, ele precisa seguir as seguintes e
 Certifique-se de manter o token do bot seguro e não compartilhá-lo publicamente, pois ele concede acesso ao bot Telegram.
 
 ---
-
-Com esta documentação, outros desenvolvedores deveriam ser capazes de entender como o bot funciona e como configurá-lo em seu próprio ambiente. Certifique-se de substituir `"seu_token_aqui"` no arquivo `.env` pelo token real do bot antes de fazer o commit no GitHub.
