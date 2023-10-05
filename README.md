@@ -1,6 +1,4 @@
-Claro, vou fornecer uma documentação geral da estrutura do seu projeto, suas funcionalidades e um aviso para outros desenvolvedores que desejem utilizar o bot.
 
----
 
 # Telegram TikTok Bot
 
