@@ -4,13 +4,15 @@ Claro, vou fornecer uma documentação geral da estrutura do seu projeto, suas f
 
 # Telegram TikTok Bot
 
+![Bot Image](https://i.ibb.co/h7kfRYY/Telegram-Bots-CLBlog-Title01.png)
+
 Este é um bot Telegram que permite aos usuários enviar URLs do TikTok e receber o vídeo correspondente sem a marca d'água. O bot é construído em Node.js e usa as bibliotecas `node-telegram-bot-api` e `axios` para interagir com a API do Telegram e obter informações do TikTok.
 
 ## Criação do Perfil do Bot no BotFather
 
 Para usar o bot, você precisa criar um perfil de bot no BotFather do Telegram. Siga estas etapas:
 
-1.  Abra o Telegram e pesquise por "BotFather".
+1.  Abra o Telegram e pesquise por "[BotFather](https://t.me/BotFather)".
     
 2.  Inicie uma conversa com o BotFather.
     
