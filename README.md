@@ -1,82 +1,74 @@
-
-
 # Telegram TikTok Bot
 
 ![Bot Image](https://i.ibb.co/h7kfRYY/Telegram-Bots-CLBlog-Title01.png)
 
-Este é um bot Telegram que permite aos usuários enviar URLs do TikTok e receber o vídeo correspondente sem a marca d'água. O bot é construído em Node.js e usa as bibliotecas `node-telegram-bot-api` e `axios` para interagir com a API do Telegram e obter informações do TikTok.
+This is a Telegram bot that allows users to send TikTok URLs and receive the corresponding video without a watermark. The bot is built using Node.js and leverages the `node-telegram-bot-api` and `axios` libraries to interact with the Telegram API and fetch TikTok data.
 
-## Criação do Perfil do Bot no BotFather
+## Creating the Bot Profile on BotFather
 
-Para usar o bot, você precisa criar um perfil de bot no BotFather do Telegram. Siga estas etapas:
+To use the bot, you need to create a bot profile using Telegram's BotFather. Follow these steps:
 
-1.  Abra o Telegram e pesquise por "[BotFather](https://t.me/BotFather)".
-    
-2.  Inicie uma conversa com o BotFather.
-    
-3.  Use o comando `/newbot` para criar um novo bot. O BotFather irá pedir um nome para o seu bot.
-    
-4.  Escolha um nome para o seu bot. Este nome será exibido para os usuários.
-    
-5.  O BotFather irá gerar um token para o seu bot. Anote esse token, pois você precisará dele para configurar o seu projeto.
+1. Open Telegram and search for "[BotFather](https://t.me/BotFather)".
+2. Start a conversation with BotFather.
+3. Use the `/newbot` command to create a new bot. BotFather will ask for a name for your bot.
+4. Choose a name for your bot. This name will be visible to users.
+5. BotFather will generate a token for your bot. Save this token, as you’ll need it to configure your project.
 
-## Estrutura do Projeto
+## Project Structure
 
-O projeto é dividido em vários módulos para facilitar a manutenção e expansão do código. Aqui está uma visão geral da estrutura de arquivos:
+The project is divided into several modules to make the codebase easier to maintain and expand. Here's an overview of the file structure:
 
-- **`config.js`**: Este arquivo contém as configurações do bot, como o token do bot Telegram e URLs relevantes.
+- **`config.js`**: Contains bot configuration, such as the Telegram bot token and relevant URLs.
 
-- **`logger.js`**: Módulo responsável por registrar mensagens do usuário em arquivos de log.
+- **`logger.js`**: Responsible for logging user messages to log files.
 
-- **`tiktok.js`**: Módulo que lida com o processamento de URLs do TikTok, incluindo a validação da URL e o envio do vídeo.
+- **`tiktok.js`**: Handles the processing of TikTok URLs, including URL validation and video delivery.
 
-- **`bot.js`**: O ponto de entrada do bot, onde a inicialização do bot Telegram e a função de tratamento de mensagens estão definidas.
+- **`bot.js`**: The bot’s entry point, where the Telegram bot is initialized and message handling logic is defined.
 
-- **`main.js`**: Arquivo principal para iniciar o bot. Importa configurações e inicia o bot.
+- **`main.js`**: Main file to launch the bot. It imports configurations and starts the bot.
 
-## Funcionalidades
+## Features
 
-O bot Telegram possui as seguintes funcionalidades:
+The Telegram bot includes the following features:
 
-1. **Envio de URL do TikTok**: Os usuários podem enviar URLs do TikTok para o bot.
+1. **TikTok URL Submission**: Users can send TikTok URLs to the bot.
 
-2. **Processamento de URL do TikTok**: O bot processa a URL do TikTok, remove a marca d'água e envia o vídeo de volta ao usuário.
+2. **TikTok URL Processing**: The bot processes the URL, removes the watermark, and sends the video back to the user.
 
-3. **Registro de Mensagens**: Todas as mensagens dos usuários são registradas em arquivos de log para fins de auditoria e rastreamento.
+3. **Message Logging**: All user messages are logged in files for auditing and tracking purposes.
 
-4. **Comando `/start`**: Os usuários podem usar o comando `/start` para obter informações sobre como usar o bot.
+4. **`/start` Command**: Users can use the `/start` command to get information on how to use the bot.
 
-## Como Usar
+## How to Use
 
-Para usar o bot, siga estas etapas:
+To use the bot, follow these steps:
 
-1. Clone o repositório para o seu ambiente local.
+1. Clone the repository to your local environment.
 
-2. Certifique-se de que o Node.js e o npm estejam instalados.
+2. Make sure Node.js and npm are installed.
 
-3. Instale as dependências do projeto executando `npm install` no diretório raiz.
+3. Install project dependencies by running `npm install` in the root directory.
 
-4. Crie um arquivo `.env` na raiz do projeto e adicione o token do bot Telegram da seguinte forma:
-   ```
-   TELEGRAM_BOT_TOKEN=seu_token_aqui
-   ```
+4. Create a `.env` file in the root directory and add your Telegram bot token like this:
 
-5. Inicie o bot executando `node main.js`.
+TELEGRAM_BOT_TOKEN=your_token_here
 
-6. Agora, o bot está em execução e pronto para processar URLs do TikTok. Os usuários podem iniciar uma conversa com o bot e enviar URLs do TikTok para receber vídeos sem a marca d'água.
 
-## Aviso para Outros Desenvolvedores
+5. Start the bot by running `node main.js`.
 
-Para que outro desenvolvedor utilize este bot, ele precisa seguir as seguintes etapas:
+6. The bot is now running and ready to process TikTok URLs. Users can start a conversation with the bot and send TikTok links to receive videos without watermarks.
 
-1. Clonar o repositório do GitHub.
+## Notice for Other Developers
 
-2. Configurar o arquivo `.env` com o token do bot Telegram.
+For another developer to use this bot, they need to follow these steps:
 
-3. Executar `npm install` para instalar as dependências.
+1. Clone the GitHub repository.
 
-4. Iniciar o bot com `node main.js`.
+2. Set up the `.env` file with the Telegram bot token.
 
-Certifique-se de manter o token do bot seguro e não compartilhá-lo publicamente, pois ele concede acesso ao bot Telegram.
+3. Run `npm install` to install dependencies.
 
----
+4. Start the bot using `node main.js`.
+
+Make sure to keep the bot token secure and do not share it publicly, as it grants access to your Telegram bot.
